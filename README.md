@@ -19,6 +19,7 @@ return ts.speed('max') //Max value for setup
 - ts.locoBrakePsi()
 - ts.throttle()
 - ts.loconame()
+- ts.rpm()
 
 
 ![plot](screen.png)
