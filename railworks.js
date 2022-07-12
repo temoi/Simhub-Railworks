@@ -22,11 +22,6 @@ function tsValue(names,type, defaultValue, readall) {  // type = null, max, min
 	})
 	return value;
 }
-function tsAmps(type) {
-	//return $prop('GameRawData.Ammeter');
-	const amps_names = ['Ammeter','Amperes','Amps'];
-	return this.tsValue(amps_names,type,0);
-}
 
 function Railworks()  {
 	return {
@@ -34,6 +29,7 @@ function Railworks()  {
 			return '1234'
 		},
 		loconame: function(){
+			//todo
 			return 'Navn på logomotives'
 		},
 		rpm: function() {
