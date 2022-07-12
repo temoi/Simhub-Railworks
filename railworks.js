@@ -29,12 +29,14 @@ function Railworks()  {
 			return '1234'
 		},
 		loconame: function(){
-			//todo
-			return 'Navn på logomotives'
+			const names = [
+				"LocoEngineName"
+			]
+			return tsValue(names,null,'?');
 		},
-		rpm: function() {
-			let result = 0;
-			if (true) return 0
+		rpm: function(type) {
+			const amps_names = ['RPM'];
+			return tsValue(amps_names,type,0);
 		},
 		amps: function(type) {
 			const amps_names = ['Ammeter','Amperes','Amps'];
@@ -49,7 +51,7 @@ function Railworks()  {
 				'TrainBrakeCylinderPressure',
 				'AirBrakePipePressureBAR',
 				'CabTPNeedle'];
-			return tsValue(names,type, 0);
+			return tsValue(names,type, 0, true);
 		},
 		airBrake: function(type) {
 			const names = [
@@ -72,7 +74,7 @@ function Railworks()  {
 				'lvrTrainbrake',
 				'Zaviralnik'
 			]
-			return tsValue(names,type,0);
+			return tsValue(names,type,0, true);
 		},
 		locoBrake: function(type) {
 			const names = [
