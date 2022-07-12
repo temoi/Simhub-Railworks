@@ -20,4 +20,4 @@ return ts.speed('max') //Max value for setup
 - ts.throttle()
 
 
-![plot](.screen.png)
+![plot](screen.png)
