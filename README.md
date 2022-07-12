@@ -14,7 +14,7 @@ return ts.speed('max') //Max value for setup
 - ts.amps()
 - ts.trainBrakePsi()
 - ts.airBrake()
-- locoBrake()
+- ts.locoBrake()
 - ts.dynamicBrake()
 - ts.locoBrakePsi()
 - ts.throttle()
